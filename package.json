@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "name": "train-track",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js --ignore client",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jffsun/train-track.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jffsun/train-track/issues"
+  },
+  "homepage": "https://github.com/jffsun/train-track#readme",
+  "description": ""
+}
