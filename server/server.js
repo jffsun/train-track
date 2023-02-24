@@ -8,7 +8,7 @@ const {ApolloServer} = require('apollo-server-express');
 // TO DO: Create typeDefs and Resolvers
 const {typeDefs, resolvers} = require('./schemas');
 
-// import node.js package providing a way to work with file and directory paths
+// import path node.js package providing a way to work with file and directory paths
 const path = require('path');
 
 // allows cross origin resource sharing
@@ -29,8 +29,8 @@ app.use(cors());
 // recognizes request objects as a json object
 app.use(express.json());
 
-// when Apollo Server API receives query/mutation, Apollo Server uses resolvers you defined to fetch the data and return the results to the client in the format specified by the GraphQL specification.
-// written in SDL (Schema Definition Language), typeDefs define the structure of the data that clients can query from your API
+// Apollo Server API receives query/mutation, your resolvers fetch the data and return the results to the client in the format specified
+// typeDefs define the structure of the data that clients can query from your API
 // resolvers are responsible for fetching and transforming that data from the underlying data sources that were requested by the client
 const server = new ApolloServer({typeDefs, resolvers })
 
