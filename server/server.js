@@ -1,5 +1,5 @@
 // import express server package
-const express = require("express");
+const express = require('express');
 
 // graphql is a query language, explicitly outlining the input and output of a query, allowing for one api endpoint to handle multiple mutations and queries
 // apollo server is an implementation of graphql. allows us to describe the types of data our api can handle + the available queries and mutations
