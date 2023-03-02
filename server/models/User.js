@@ -3,12 +3,7 @@ const bcrypt = require('bcrypt');
 const Workout = require('./Workout');
 
 const userSchema = new Schema({
-  firstName: {
-    type: String,
-    required: true,
-    trim: true
-  },
-  lastName: {
+  name: {
     type: String,
     required: true,
     trim: true

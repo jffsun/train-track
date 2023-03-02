@@ -1,24 +1,30 @@
 const { Schema, model } = require('mongoose');
 
 const setSchema = new Schema ({
-    stats: {
-      weight: Number,
-      repetitions: Number
+  stats: [{
+    weight: {
+      type: Number,
+      required: true
     },
-    personal_record: {
-      type: Boolean,
+    reps: {
+      type: Number,
+      required: true
+    }
+  }],
+  personal_record: {
+    type: Boolean,
+  },
+  date: {
+    type: Date, 
+    default: Date.now 
+  },
+  }, 
+  {
+    // converts the mongoose document into a json object
+    toJSON: {
+        getters: true,
     },
-    date: {
-      type: Date, 
-      default: Date.now 
-    },
-    }, 
-    {
-      // converts the mongoose document into a json object
-      toJSON: {
-          getters: true,
-      },
-        id: false,
+      id: false,
     },
 );
 
