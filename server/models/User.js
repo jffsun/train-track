@@ -18,6 +18,16 @@ const userSchema = new Schema({
     required: true,
     minlength: 5
   },
+  // "tell us a little about yourself"
+  bio: {
+    type: String,
+    required: true,
+  },
+  // "what do you hope to accomplish": 1. be stronger 2. be healthier 3. look better 4. other
+  goals: {
+    type: String,
+    required: true,
+  },
   workouts: [Workout.schema],
 },
 {
