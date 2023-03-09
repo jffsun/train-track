@@ -7,6 +7,11 @@ const exerciseSchema = new Schema ({
         required: true,
         trim: true,
       },
+      workoutId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Workout',
+        required: true
+      },
       sets: [Set.schema],
     },
     {

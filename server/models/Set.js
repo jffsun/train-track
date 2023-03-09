@@ -1,7 +1,12 @@
 const { Schema, model } = require('mongoose');
 
 const setSchema = new Schema ({
-  stats: [{
+  exerciseId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Exercise',
+    required: true
+  },
+  stats: {
     weight: {
       type: Number,
       required: true
@@ -10,7 +15,7 @@ const setSchema = new Schema ({
       type: Number,
       required: true
     }
-  }],
+  },
   personal_record: {
     type: Boolean,
   },
