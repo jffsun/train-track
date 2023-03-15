@@ -22,7 +22,7 @@ const typeDefs = gql`
   }
 
   type SetQueries {
-    getExerciseSets(exerciseId: ID!): [Sets!]!
+    getExerciseSets(exerciseName: name!): [Sets!]!
   }
 
   type Mutation {
@@ -74,8 +74,8 @@ const typeDefs = gql`
   }
 
   input CreateWorkoutInput {
-    name: String!
     userId: ID!
+    name: String!
   }
 
   input UpdateWorkoutInput {
@@ -85,8 +85,8 @@ const typeDefs = gql`
   }
 
   input CreateExerciseInput {
-    name: String!
     workoutId: ID!
+    name: String!
   }
 
   input UpdateExerciseInput {
@@ -98,14 +98,16 @@ const typeDefs = gql`
 
   input CreateSetInput {
     exerciseId: ID!
-    stats: Stats!
+    weight: Float!
+    reps: Int
+    time: Int
     personal_record: Boolean
     date: Date!
   }
 
   input UpdateSetInput {
    id: ID!
-   stats: Stats
+   
    personal_record: Boolean
   }
 
@@ -121,33 +123,31 @@ const typeDefs = gql`
 
   type Workout {
     id: ID!
+    userId: ID!
     name: String!
-    userId: 
     exercises: [Exercise]
   }  
 
   type Exercise {
     id: ID!
+    workoutId: ID!
     name: String!
     sets: [Set]
   }  
 
   type Set {
     id: ID!
-    stats: Stats
+    exerciseId: ID!
+    weight: Float
+    reps: Int
+    time: Int
     personal_record: Boolean
     date: Date!
   }  
 
-  type Stats {
-    weight: Float!
-    reps: Int!
-  }
-
   schema {
     query: Query
     mutation: Mutation
-    subscription: Subscription
   }
 `;
 
