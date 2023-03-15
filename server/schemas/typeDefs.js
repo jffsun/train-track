@@ -1,3 +1,4 @@
+// typedefs define the "shape" of the data
 const { gql } = require('apollo-server');
 const dateScalar = require('./dateScalar');
 
