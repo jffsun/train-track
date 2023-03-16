@@ -15,7 +15,7 @@ const typeDefs = gql`
   }
 
   type WorkoutQueries {
-    getUserWorkouts(userId: ID!): [Workout!]!
+    getWorkoutsByUserId(userId: ID!): [Workout!]!
   }
 
   type ExerciseQueries {
