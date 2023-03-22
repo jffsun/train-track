@@ -4,27 +4,23 @@ const { User, Workout, Exercise, Set } = require('../models')
 const resolvers = {
   Query: {
     // gets a user by id with their workouts
-    getUser: async(_, { id }) => { // { id } obj destructuring syntax to get the 'id' field from User model
+    getUser: async (_, { id }) => { // { id } obj destructuring syntax to get the 'id' field from User model
       return await User.findById(id);
     },
     // gets all workouts by user's id
-    getWorkoutsByUserId: async(_, { userId }) => {
+    getWorkoutsByUserId: async (_, { userId }) => {
       return await Workout.find({ userId });
     },
     // gets a exercise by workout's id
-    getExerciseByWorkoutId: async(_, { workoutId }) => {
+    getExerciseByWorkoutId: async (_, { workoutId }) => {
       return await Exercise.find({ workoutId });
     }
   },
   Mutation: {
     // { input } refers to deconstructed values of input object
-    createUser: async(_, { input }) => {
+    createUser: async (_, { input }) => {
       try {
-        // extract all properties from input object
-        const { name, email, password, bio, goals } = input;
-
-        // create new user with extracted input values
-        const newUser = new User({ name, email, password, bio, goals });
+        const newUser = new User(input);
         await newUser.save();
         return newUser;
       }
@@ -33,11 +29,14 @@ const resolvers = {
         throw new Error("Error creating user.");
       }
     },
-    // destructures user's id and other input values for easy access within function
-    updateUser: async(_, { id, input }) => {
+    // destructures user's id and input values for easy access within function
+    updateUser: async (_, { id, input }) => {
       try {
         // returns the updated user back to client 
         const updatedUser = await User.findByIdAndUpdate(id, input, { new: true });
+        if (!updatedUser) {
+          throw new Error("User not found.");
+        }
         return updatedUser;
       }
       catch(error) {
@@ -45,18 +44,128 @@ const resolvers = {
         throw new Error("Error updating user.");
       }
     },
-
-    deleteUser: async(_, { id }) => {
+    // destructure id from user input object to use in function
+    deleteUser: async (_, { id }) => {
       try {
         const deletedUser = await User.findByIdAndDelete(id);
         if (!deletedUser) {
-          throw new Error();
+          throw new Error(`User with ID: ${id} not found.`);
         }
         return true;
       }
       catch(error) {
         console.error(error);
         throw new Error("Error deleting user.");
+      }
+    },
+    createWorkout: async (_, { input }) => {
+      try {
+        const newWorkout = new Workout(input);
+        await newWorkout.save();
+        return newWorkout;
+      }
+      catch(error) {
+        console.error(error);
+        throw new Error("Error creating workout.");
+      }
+    },
+    updateWorkout: async (_, { id, input }) => {
+      try {
+        const updatedWorkout = Workout.findByIdAndUpdate(id, input, { new: true });
+        if (!updatedWorkout) {
+          throw new Error(`Workout with ID: ${id} not found.`);
+        }
+        return updatedWorkout; 
+      }
+      catch(error) {
+        console.error(error);
+        throw new Error("Error updating workout.");
+      }
+    },
+    deleteWorkout: async (_, { id }) => {
+      try {
+        deletedWorkout = Workout.findByIdAndDelete(id);
+        if (!deletedWorkout) {
+          throw new Error(`Workout with ID: ${id} not found.`);
+        }
+        return true
+      }
+      catch(error) {
+        console.error(error);
+        throw new Error("Error deleting workout.")
+      }
+    },
+    createExercise: async (_, { input }) => {
+      try {
+        const newExercise = new Exercise(input);
+        await newExercise.save();
+        return newExercise;
+      }
+      catch(error) {
+        console.error(error);
+        throw new Error("Error creating exercise.");
+      }
+    },
+    updateExercise: async (_, { id, input }) => {
+      try {
+        const updatedExercise = Exercise.findByIdAndUpdate(id, input, { new: true });
+        if (!updatedExercise) {
+          throw new Error(`Exercise with ID: ${id} not found.`);
+        }
+        return updatedExercise;
+      }
+      catch(error) {
+        console.error(error);
+        throw new Error("Error updating exercise.");
+      }
+    },
+    deleteExercise: async (_, { id }) => {
+      try {
+        const deletedExercise = Exercise.findByIdAndDelete(id);
+        if (!deletedExercise) {
+          throw new Error(`Exercise with ID: ${id} not found.`);
+        }
+        return true;
+      }
+      catch(error) {
+        console.error(error);
+        throw new Error("Error deleting exercise.")
+      }
+    },
+    createSet: async (_, { input }) => {
+      try {
+        const newSet = new Set(input);
+        await newSet.save();
+        return newSet;
+      }
+      catch(error) {
+        console.error(error);
+        throw new Error("Error creating set.")
+      }
+    },
+    updateSet: async (_, { id, input }) => {
+      try {
+        const updatedSet = Set.findByIdAndUpdate(id, input, { new: true });
+        if (!updatedSet) {
+          throw new Error(`Set with ID: ${id} not found.`);
+        }
+        return updatedSet;
+      }
+      catch(error) {
+        console.error(error);
+        throw new Error("Error updating set.")
+      }
+    },
+    deleteSet: async (_, { id }) => {
+      try {
+        const deletedSet = Set.findByIdAndDelete(id);
+        if (!deletedSet) {
+          throw new Error(`Set with ID: ${id} not found.`);
+        }
+        return true;
+      }
+      catch(error) {
+        console.error("Error deleting set.");
       }
     }
   },
