@@ -5,7 +5,6 @@ const express = require('express');
 // apollo server is an implementation of graphql. allows us to describe the types of data our api can handle + the available queries and mutations
 const {ApolloServer} = require('apollo-server-express');
 
-// TO DO: Create typeDefs and Resolvers
 const {typeDefs, resolvers} = require('./schemas');
 
 // import path node.js package providing a way to work with file and directory paths
@@ -21,7 +20,9 @@ const db = require("./db/conn");
 const app = express();
 
 // import and configure dotenv package
-// require("dotenv").config({ path: "./config.env" });
+require('dotenv').config();
+
+console.log(process.env.ATLAS_URI);
 
 // allow for app to interact with apis hosted on different domains
 app.use(cors());

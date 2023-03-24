@@ -1,27 +1,27 @@
+require('dotenv').config(); // specify path to your .env file
+
+console.log(process.env.ATLAS_URI);
+
 const { MongoClient } = require("mongodb");
 
-// Db variable to reference URI string that connects to Atlas cloud database
 const Db = process.env.ATLAS_URI;
 const client = new MongoClient(Db, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
- 
+
 var _db;
- 
+
 module.exports = {
   connectToServer: function (callback) {
     client.connect(function (err, db) {
-      // Verify we got a good "db" object
-      if (db)
-      {
+      if (db) {
         _db = db.db("train-trackDB");
-        console.log("Successfully connected to MongoDB."); 
+        console.log("Successfully connected to MongoDB.");
       }
       return callback(err);
-         });
+    });
   },
- 
   getDb: function () {
     return _db;
   },
