@@ -5,15 +5,58 @@ const resolvers = {
   Query: {
     // gets a user by id with their workouts
     getUser: async (_, { id }) => { // { id } obj destructuring syntax to get the 'id' field from User model
-      return await User.findById(id);
+      try{ 
+        // await inside async function forces function to resolve/reject before continuing
+        const user = await User.findById(id)
+        if (!user) {
+          throw new Error(`User with ID: ${id} not found.`);
+        }
+        return user;
+      }
+      catch(error) {  
+        console.error(error);
+        throw new Error("Error finding user.");
+      }
     },
     // gets all workouts by user's id
     getWorkoutsByUserId: async (_, { userId }) => {
-      return await Workout.find({ userId });
+      try {
+        const workouts = await Workout.find({ userId });
+        if (!workouts) {
+          throw new Error(`Workouts under User ID: ${userId} cannot be found.`);
+        }
+        return workouts;
+      }
+      catch(error) {
+        console.error(error);
+        throw new Error("Error finding workouts.");
+      }
     },
     // gets a exercise by workout's id
-    getExerciseByWorkoutId: async (_, { workoutId }) => {
-      return await Exercise.find({ workoutId });
+    getExercisesByWorkoutId: async (_, { workoutId }) => {
+      try {
+        const exercises = await Exercise.find({ workoutId });
+        if (!exercises) {
+          throw new Error(`Exercises under Workout ID: ${workoutId} cannot be found.`);
+        }
+        return exercises;
+      } catch(error) {
+        console.error(error);
+        throw new Error("Error finding exercises.");
+      }
+    },
+    getSetsByExerciseId: async (_, { exerciseId }) => {
+      try {
+       const sets = await Set.find({ exerciseId })
+       if (!sets) {
+        throw new Error(`Sets with Exercise ID: ${exerciseId} cannot be found.`);
+       }
+       return sets;
+      }
+      catch(error) { 
+        console.error(error);
+        throw new Error("Error finding sets.");
+      }
     }
   },
   Mutation: {
@@ -129,7 +172,7 @@ const resolvers = {
       }
       catch(error) {
         console.error(error);
-        throw new Error("Error deleting exercise.")
+        throw new Error("Error deleting exercise.");
       }
     },
     createSet: async (_, { input }) => {
@@ -140,7 +183,7 @@ const resolvers = {
       }
       catch(error) {
         console.error(error);
-        throw new Error("Error creating set.")
+        throw new Error("Error creating set.");
       }
     },
     updateSet: async (_, { id, input }) => {
@@ -153,7 +196,7 @@ const resolvers = {
       }
       catch(error) {
         console.error(error);
-        throw new Error("Error updating set.")
+        throw new Error("Error updating set.");
       }
     },
     deleteSet: async (_, { id }) => {
@@ -191,4 +234,6 @@ const resolvers = {
       return sets;
     }
   }
-}
+};
+
+module.exports = resolvers;
