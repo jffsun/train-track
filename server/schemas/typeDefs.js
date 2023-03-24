@@ -1,5 +1,5 @@
 // typedefs define the "shape" of the data
-const { gql } = require('apollo-server');
+const { gql } = require('apollo-server-express');
 const dateScalar = require('./dateScalar');
 
 const typeDefs = gql`
@@ -19,11 +19,11 @@ const typeDefs = gql`
   }
 
   type ExerciseQueries {
-    getWorkoutExercises(workoutId: ID!): [Exercises!]!
+    getExercisesByWorkoutId(workoutId: ID!): [Exercises!]!
   }
 
   type SetQueries {
-    getExerciseSets(exerciseName: name!): [Sets!]!
+    getSetsByExerciseId(exerciseId: ID!): [Sets!]!
   }
 
   type Mutation {

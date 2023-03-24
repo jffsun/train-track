@@ -8,7 +8,7 @@ const exerciseSchema = new Schema ({
         trim: true,
       },
       workoutId: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: 'Workout',
         required: true
       },
