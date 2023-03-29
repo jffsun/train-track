@@ -60,19 +60,26 @@ const resolvers = {
     }
   },
   Mutation: {
-    // { input } refers to deconstructed values of input object
+    userMutations: () => ({}),
+    workoutMutations: () => ({}),
+    exerciseMutations: () => ({}),
+    setMutations: () => ({})
+  },
+  UserMutations: {
+    // accepts deconstructed values of input object
     createUser: async (_, { input }) => {
-      try {
-        const newUser = new User(input);
-        await newUser.save();
-        return newUser;
-      }
-      catch(error) {
-        console.error(error);
-        throw new Error("Error creating user.");
-      }
+    try {
+      // create newUser object
+      const newUser = new User(input);
+      await newUser.save();
+      return newUser;
+    }
+    catch(error) {
+      console.error(error);
+      throw new Error("Error creating user.");
+    }
     },
-    // destructures user's id and input values for easy access within function
+    // destructures user id and input values for easy access
     updateUser: async (_, { id, input }) => {
       try {
         // returns the updated user back to client 
@@ -100,7 +107,9 @@ const resolvers = {
         console.error(error);
         throw new Error("Error deleting user.");
       }
-    },
+    }
+  },
+  WorkoutMutations: {
     createWorkout: async (_, { input }) => {
       try {
         const newWorkout = new Workout(input);
@@ -137,7 +146,9 @@ const resolvers = {
         console.error(error);
         throw new Error("Error deleting workout.")
       }
-    },
+    }
+  },
+  ExerciseMutations: {
     createExercise: async (_, { input }) => {
       try {
         const newExercise = new Exercise(input);
@@ -174,7 +185,9 @@ const resolvers = {
         console.error(error);
         throw new Error("Error deleting exercise.");
       }
-    },
+    }
+  },
+  SetMutations: {
     createSet: async (_, { input }) => {
       try {
         const newSet = new Set(input);
@@ -212,22 +225,21 @@ const resolvers = {
       }
     }
   },
-  // resolver for 'user' type for its 'workouts' field
-  User: {
+  User: {   // resolver for workouts field for user parent obj
     // parent object referencing the 'user' type that holds the 'workouts' field
     workouts: async (parent) => {
       const workouts = await Workout.find({ userId: parent.id });
       return workouts;
     }
   },
-  // resolver for 'workout' type for its 'exercises' field
+  // resolver for exercises field for workout parent obj
   Workout: {
     exercises: async (parent) => {
       const exercises = await Exercise.find({ workoutId: parent.id });
       return exercises;
     }
   },
-  // resolver for 'exercise' type for its 'sets' field
+  // resolver for sets field for exercise parent obj
   Exercise: {
     sets: async (parent) => {
       const sets = await Set.find({ exerciseId: parent.id });

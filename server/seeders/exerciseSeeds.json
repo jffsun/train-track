@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Bench Press",
+    "workoutId": "<insert ObjectId of Push workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Incline Dumbbell Press",
+    "workoutId": "<insert ObjectId of Push workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Triceps Pushdown",
+    "workoutId": "<insert ObjectId of Push workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Pull-Ups",
+    "workoutId": "<insert ObjectId of Pull workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Bent Over Rows",
+    "workoutId": "<insert ObjectId of Pull workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Hammer Curls",
+    "workoutId": "<insert ObjectId of Pull workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Squats",
+    "workoutId": "<insert ObjectId of Legs workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Lunges",
+    "workoutId": "<insert ObjectId of Legs workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Calf Raises",
+    "workoutId": "<insert ObjectId of Legs workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Seated Military Press",
+    "workoutId": "<insert ObjectId of Upper Body workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Chin-Ups",
+    "workoutId": "<insert ObjectId of Upper Body workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Barbell Curl",
+    "workoutId": "<insert ObjectId of Upper Body workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Deadlift",
+    "workoutId": "<insert ObjectId of Lower Body workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Leg Press",
+    "workoutId": "<insert ObjectId of Lower Body workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Lying Leg Curls",
+    "workoutId": "<insert ObjectId of Lower Body workout document here>",
+    "sets": []
+  },
+    {
+    "name": "Plank",
+    "workoutId": "<insert ObjectId of Core & Cardio workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Jumping Jacks",
+    "workoutId": "<insert ObjectId of Core & Cardio workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Bicycle Crunches",
+    "workoutId": "<insert ObjectId of Core & Cardio workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Dumbbell Flyes",
+    "workoutId": "<insert ObjectId of Chest and Back workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Wide-Grip Lat Pulldown",
+    "workoutId": "<insert ObjectId of Chest and Back workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Pushups",
+    "workoutId": "<insert ObjectId of Chest and Back workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Shoulder Press",
+    "workoutId": "<insert ObjectId of Shoulders and Arms workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Bicep Curls",
+    "workoutId": "<insert ObjectId of Shoulders and Arms workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Tricep Extensions",
+    "workoutId": "<insert ObjectId of Shoulders and Arms workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Squats",
+    "workoutId": "<insert ObjectId of Leg Day A workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Leg Press",
+    "workoutId": "<insert ObjectId of Leg Day A workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Lunges",
+    "workoutId": "<insert ObjectId of Leg Day A workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Deadlifts",
+    "workoutId": "<insert ObjectId of Leg Day B workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Hamstring Curls",
+    "workoutId": "<insert ObjectId of Leg Day B workout document here>",
+    "sets": []
+  },
+  {
+    "name": "Calf Raises",
+    "workoutId": "<insert ObjectId of Leg Day B workout document here>",
+    "sets": []
+  }  
+]
