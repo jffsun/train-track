@@ -16,9 +16,9 @@ async function seedDatabase() {
   // Insert the test data into the database
   await Promise.all([
     User.insertMany(users),
-    Workout.insertMany(workouts),
-    Exercise.insertMany(exercises),
-    Set.insertMany(sets),
+    // Workout.insertMany(workouts),
+    // Exercise.insertMany(exercises),
+    // Set.insertMany(sets),
   ]);
 
   console.log('Database seeded successfully');

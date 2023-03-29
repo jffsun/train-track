@@ -118,6 +118,679 @@
     "time": null,
     "personal_record": false,
     "date": "2023-03-27T11:45:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Bent Over Rows exercise document here>",
+    "weight": 135,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-27T10:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Bent Over Rows exercise document here>",
+    "weight": 155,
+    "reps": 8,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-27T11:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Bent Over Rows exercise document here>",
+    "weight": 175,
+    "reps": 6,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-27T12:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Bent Over Rows exercise document here>",
+    "weight": 195,
+    "reps": 4,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-27T13:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Hammer Curls exercise document here>",
+    "weight": 30,
+    "reps": 12,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-27T14:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Hammer Curls exercise document here>",
+    "weight": 35,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-27T15:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Hammer Curls exercise document here>",
+    "weight": 40,
+    "reps": 8,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-27T16:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Hammer Curls exercise document here>",
+    "weight": 45,
+    "reps": 6,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-27T17:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Squats exercise document here>",
+    "weight": 135,
+    "reps": 8,
+    "time": null,
+    "personal_record": true,
+    "date": "2022-01-02T10:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Squats exercise document here>",
+    "weight": 155,
+    "reps": 6,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-01-09T10:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Squats exercise document here>",
+    "weight": 175,
+    "reps": 4,
+    "time": null,
+    "personal_record": true,
+    "date": "2022-01-16T10:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Squats exercise document here>",
+    "weight": 185,
+    "reps": 3,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-01-23T10:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Lunge exercise document here>",
+    "weight": 50,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-20T10:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Lunge exercise document here>",
+    "weight": 50,
+    "reps": 10,
+    "time": null,
+    "personal_record": true,
+    "date": "2023-03-22T10:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Lunge exercise document here>",
+    "weight": 55,
+    "reps": 8,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-24T10:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Lunge exercise document here>",
+    "weight": 60,
+    "reps": 6,
+    "time": null,
+    "personal_record": true,
+    "date": "2023-03-26T10:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Calf Raise exercise document here>",
+    "weight": 100,
+    "reps": 12,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T09:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Calf Raise exercise document here>",
+    "weight": 120,
+    "reps": 10,
+    "time": null,
+    "personal_record": true,
+    "date": "2023-03-26T09:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Calf Raise exercise document here>",
+    "weight": 80,
+    "reps": 15,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-25T09:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Calf Raise exercise document here>",
+    "weight": 90,
+    "reps": 12,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-24T09:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Seated Military Press exercise document here>",
+    "weight": 135,
+    "reps": 8,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-26T15:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Seated Military Press exercise document here>",
+    "weight": 145,
+    "reps": 6,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-26T15:15:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Seated Military Press exercise document here>",
+    "weight": 155,
+    "reps": 4,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-26T15:30:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Seated Military Press exercise document here>",
+    "weight": 135,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-26T15:45:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Chin-ups exercise document here>",
+    "weight": null,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T10:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Chin-ups exercise document here>",
+    "weight": null,
+    "reps": 8,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T10:10:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Chin-ups exercise document here>",
+    "weight": null,
+    "reps": 6,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T10:20:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Chin-ups exercise document here>",
+    "weight": null,
+    "reps": 4,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T10:30:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Barbell Curl exercise document here>",
+    "weight": 50,
+    "reps": 10,
+    "personal_record": false,
+    "date": "2023-03-27T12:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Barbell Curl exercise document here>",
+    "weight": 55,
+    "reps": 8,
+    "personal_record": false,
+    "date": "2023-03-27T13:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Barbell Curl exercise document here>",
+    "weight": 60,
+    "reps": 6,
+    "personal_record": false,
+    "date": "2023-03-27T14:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Barbell Curl exercise document here>",
+    "weight": 65,
+    "reps": 4,
+    "personal_record": false,
+    "date": "2023-03-27T15:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Deadlift exercise document here>",
+    "weight": 135,
+    "reps": 8,
+    "personal_record": false,
+    "date": "2022-03-26T20:12:11.556Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Deadlift exercise document here>",
+    "weight": 185,
+    "reps": 6,
+    "personal_record": false,
+    "date": "2022-03-26T20:14:11.556Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Deadlift exercise document here>",
+    "weight": 225,
+    "reps": 4,
+    "personal_record": true,
+    "date": "2022-03-26T20:16:11.556Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Deadlift exercise document here>",
+    "weight": 275,
+    "reps": 2,
+    "personal_record": true,
+    "date": "2022-03-26T20:18:11.556Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Leg Press exercise document here>",
+    "weight": 150,
+    "reps": 12,
+    "personal_record": false,
+    "date": "2022-03-27T12:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Leg Press exercise document here>",
+    "weight": 200,
+    "reps": 10,
+    "personal_record": true,
+    "date": "2022-03-28T12:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Leg Press exercise document here>",
+    "weight": 250,
+    "reps": 8,
+    "personal_record": false,
+    "date": "2022-03-29T12:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Leg Press exercise document here>",
+    "weight": 300,
+    "reps": 6,
+    "personal_record": true,
+    "date": "2022-03-30T12:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Lying Leg Curls exercise document here>",
+    "weight": 60,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T15:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Lying Leg Curls exercise document here>",
+    "weight": 60,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T15:05:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Lying Leg Curls exercise document here>",
+    "weight": 65,
+    "reps": 8,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T15:10:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Lying Leg Curls exercise document here>",
+    "weight": 70,
+    "reps": 8,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T15:15:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Planks exercise document here>",
+    "weight": null,
+    "reps": null,
+    "time": 30,
+    "personal_record": false,
+    "date": "2022-03-27T00:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Planks exercise document here>",
+    "weight": null,
+    "reps": null,
+    "time": 45,
+    "personal_record": false,
+    "date": "2022-03-29T00:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Planks exercise document here>",
+    "weight": null,
+    "reps": null,
+    "time": 60,
+    "personal_record": false,
+    "date": "2022-03-31T00:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Planks exercise document here>",
+    "weight": null,
+    "reps": null,
+    "time": 75,
+    "personal_record": true,
+    "date": "2022-04-02T00:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Wide-Grip Lat Pulldown exercise document here>",
+    "weight": 100,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-27T18:30:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Wide-Grip Lat Pulldown exercise document here>",
+    "weight": 110,
+    "reps": 8,
+    "time": null,
+    "personal_record": true,
+    "date": "2022-03-29T18:30:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Wide-Grip Lat Pulldown exercise document here>",
+    "weight": 115,
+    "reps": 6,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-04-01T18:30:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Wide-Grip Lat Pulldown exercise document here>",
+    "weight": 120,
+    "reps": 5,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-04-03T18:30:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Shoulder Press exercise document here>",
+    "weight": 50,
+    "reps": 8,
+    "time": null,
+    "personal_record": true,
+    "date": "2022-03-01T12:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Shoulder Press exercise document here>",
+    "weight": 55,
+    "reps": 6,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-03T14:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Shoulder Press exercise document here>",
+    "weight": 50,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-05T16:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Shoulder Press exercise document here>",
+    "weight": 60,
+    "reps": 4,
+    "time": null,
+    "personal_record": true,
+    "date": "2022-03-07T18:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Bicep Curl exercise document here>",
+    "weight": 25,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T12:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Bicep Curl exercise document here>",
+    "weight": 30,
+    "reps": 8,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T12:05:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Bicep Curl exercise document here>",
+    "weight": 35,
+    "reps": 6,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T12:10:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Bicep Curl exercise document here>",
+    "weight": 40,
+    "reps": 4,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T12:15:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Tricep Extensions exercise document here>",
+    "weight": 20,
+    "reps": 12,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T12:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Tricep Extensions exercise document here>",
+    "weight": 20,
+    "reps": 12,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T12:15:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Tricep Extensions exercise document here>",
+    "weight": 20,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T12:30:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Tricep Extensions exercise document here>",
+    "weight": 20,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T12:45:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Squats exercise document here>",
+    "weight": 135,
+    "reps": 8,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-02-14T18:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Squats exercise document here>",
+    "weight": 155,
+    "reps": 6,
+    "time": null,
+    "personal_record": true,
+    "date": "2022-02-21T18:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Squats exercise document here>",
+    "weight": 165,
+    "reps": 4,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-02-28T18:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Squats exercise document here>",
+    "weight": 175,
+    "reps": 3,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-07T18:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Leg Press exercise document here>",
+    "weight": 200,
+    "reps": 10,
+    "personal_record": true,
+    "date": "2022-03-15T12:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Leg Press exercise document here>",
+    "weight": 220,
+    "reps": 8,
+    "personal_record": false,
+    "date": "2022-03-18T12:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Leg Press exercise document here>",
+    "weight": 240,
+    "reps": 6,
+    "personal_record": false,
+    "date": "2022-03-21T12:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Leg Press exercise document here>",
+    "weight": 250,
+    "reps": 5,
+    "personal_record": false,
+    "date": "2022-03-24T12:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Lunge exercise document here>",
+    "weight": 20,
+    "reps": 10,
+    "personal_record": false,
+    "date": "2023-03-27T00:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Lunge exercise document here>",
+    "weight": 25,
+    "reps": 8,
+    "personal_record": false,
+    "date": "2023-03-28T00:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Lunge exercise document here>",
+    "weight": 30,
+    "reps": 6,
+    "personal_record": false,
+    "date": "2023-03-29T00:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Lunge exercise document here>",
+    "weight": 35,
+    "reps": 4,
+    "personal_record": false,
+    "date": "2023-03-30T00:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Deadlift exercise document here>",
+    "weight": 135,
+    "reps": 5,
+    "personal_record": true,
+    "date": "2022-03-25T00:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Deadlift exercise document here>",
+    "weight": 185,
+    "reps": 3,
+    "personal_record": true,
+    "date": "2022-03-27T00:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Deadlift exercise document here>",
+    "weight": 225,
+    "reps": 1,
+    "personal_record": true,
+    "date": "2022-03-29T00:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Deadlift exercise document here>",
+    "weight": 205,
+    "reps": 5,
+    "personal_record": false,
+    "date": "2022-04-02T00:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Hamstring Curls exercise document here>",
+    "weight": 50,
+    "reps": 12,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-01T00:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Hamstring Curls exercise document here>",
+    "weight": 60,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-03T00:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Hamstring Curls exercise document here>",
+    "weight": 65,
+    "reps": 8,
+    "time": null,
+    "personal_record": true,
+    "date": "2022-03-05T00:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Hamstring Curls exercise document here>",
+    "weight": 70,
+    "reps": 6,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-07T00:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Calf Raises exercise document here>",
+    "weight": 100,
+    "reps": 12,
+    "personal_record": true,
+    "date": "2022-03-25T10:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Calf Raises exercise document here>",
+    "weight": 110,
+    "reps": 12,
+    "personal_record": true,
+    "date": "2022-03-27T10:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Calf Raises exercise document here>",
+    "weight": 120,
+    "reps": 10,
+    "date": "2022-03-29T10:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Calf Raises exercise document here>",
+    "weight": 120,
+    "reps": 10,
+    "date": "2022-03-31T10:00:00Z"
   }
-// To Do: Exercises after pull ups  
 ]
