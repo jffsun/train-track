@@ -4,28 +4,12 @@ const dateScalar = require('./dateScalar');
 
 const typeDefs = gql`
   type Query {
-    userQueries: UserQueries
-    workoutQueries: WorkoutQueries
-    exerciseQueries: ExerciseQueries
-    setQueries: SetQueries
+    getUser(id: ID!): User!
+    getWorkoutsByUserId(userId: ID!): [Workout!]!
+    getExercisesByWorkoutId(workoutId: ID!): [Exercise!]!
+    getSetsByExerciseId(exerciseId: ID!): [Set!]!
   }
   
-  type UserQueries {
-    getUser(id: ID!): User!
-  }
-
-  type WorkoutQueries {
-    getWorkoutsByUserId(userId: ID!): [Workout!]!
-  }
-
-  type ExerciseQueries {
-    getExercisesByWorkoutId(workoutId: ID!): [Exercises!]!
-  }
-
-  type SetQueries {
-    getSetsByExerciseId(exerciseId: ID!): [Sets!]!
-  }
-
   type Mutation {
     userMutations: UserMutations
     workoutMutations: WorkoutMutations
@@ -99,7 +83,7 @@ const typeDefs = gql`
 
   input CreateSetInput {
     exerciseId: ID!
-    weight: Float!
+    weight: Float
     reps: Int
     time: Int
     personal_record: Boolean
@@ -108,7 +92,9 @@ const typeDefs = gql`
 
   input UpdateSetInput {
    id: ID!
-   
+   weight: Float
+   reps: Int
+   Time: Int   
    personal_record: Boolean
   }
 

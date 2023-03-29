@@ -1,0 +1,123 @@
+[
+  {
+    "exerciseId": "<insert ObjectId of Bench Press exercise document here>",
+    "weight": 135,
+    "reps": 10,
+    "personal_record": false,
+    "date": "2022-03-01T08:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Bench Press exercise document here>",
+    "weight": 145,
+    "reps": 8,
+    "personal_record": false,
+    "date": "2022-03-08T08:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Bench Press exercise document here>",
+    "weight": 155,
+    "reps": 6,
+    "personal_record": false,
+    "date": "2022-03-15T08:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Bench Press exercise document here>",
+    "weight": 165,
+    "reps": 4,
+    "personal_record": true ,
+    "date": "2022-03-22T08:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Incline Dumbbell Press exercise document here>",
+    "weight": 50,
+    "reps": 10,
+    "personal_record": false,
+    "date": "2022-03-02T08:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Incline Dumbbell Press exercise document here>",
+    "weight": 55,
+    "reps": 8,
+    "personal_record": false,
+    "date": "2022-03-09T08:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Incline Dumbbell Press exercise document here>",
+    "weight": 60,
+    "reps": 6,
+    "personal_record": false,
+    "date": "2022-03-16T08:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Incline Dumbbell Press exercise document here>",
+    "weight": 65,
+    "reps": 4,
+    "personal_record": false,
+    "date": "2022-03-23T08:00:00Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Triceps Pushdown exercise document here>",
+    "weight": 50,
+    "reps": 12,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T10:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Triceps Pushdown exercise document here>",
+    "weight": 55,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T10:15:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Triceps Pushdown exercise document here>",
+    "weight": 60,
+    "reps": 8,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T10:30:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Triceps Pushdown exercise document here>",
+    "weight": 65,
+    "reps": 6,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T10:45:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Pullups exercise document here>",
+    "weight": null,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T11:00:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Pullups exercise document here>",
+    "weight": null,
+    "reps": 8,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T11:15:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Pullups exercise document here>",
+    "weight": null,
+    "reps": 6,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T11:30:00.000Z"
+  },
+  {
+    "exerciseId": "<insert ObjectId of Pullups exercise document here>",
+    "weight": null,
+    "reps": 4,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T11:45:00.000Z"
+  }
+// To Do: Exercises after pull ups  
+]

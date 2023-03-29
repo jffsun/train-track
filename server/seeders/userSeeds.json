@@ -1,0 +1,89 @@
+[
+  { "name": "Jemina Frazier", 
+  "email":  "jemina.frazier@gmail.com",
+  "password": "bacon375",
+  "bio": "Introvert. Devoted bacon trailblazer. Thinker. Writer.",
+  "goals": "Get stronger",
+  "workouts": []
+  },
+  {
+    "name": "Lila Harrison",
+    "email": "lila.harrison@example.com",
+    "password": "pencil234",
+    "bio": "Reader. Internet practitioner. Music enthusiast. Analyst.",
+    "goals": "Get stronger",
+    "workouts": []
+  },
+  {
+    "name": "Jack Marsh",
+    "email": "jack.marsh@example.com",
+    "password": "coffee123",
+    "bio": "Certified web geek. Travel buff. Hardcore food advocate. Music fanatic.",
+    "goals": "Be healthier",
+    "workouts": []
+  },
+  {
+    "name": "Gavin Johnston",
+    "email": "gavin.johnston@example.com",
+    "password": "carrot456",
+    "bio": "Wannabe food specialist. Tv lover. Proud social mediaholic. Gamer.",
+    "goals": "Look better",
+    "workouts": []
+  },
+  {
+    "name": "Leah Scott",
+    "email": "leah.scott@example.com",
+    "password": "banana789",
+    "bio": "Social media buff. General pop culture evangelist. Internet ninja. Entrepreneur.",
+    "goals": "Get stronger",
+    "workouts": []
+  },
+  {
+    "name": "Dennis Webb",
+    "email": "dennis.webb@example.com",
+    "password": "football456",
+    "bio": "Travel fanatic. Pop culture enthusiast. Music ninja. Freelance zombie practitioner.",
+    "goals": "Be healthier",
+    "workouts": []
+  },
+  {
+    "name": "Lila Mitchell",
+    "email": "lila.mitchell@example.com",
+    "password": "sugar789",
+    "bio": "Typical internet guru. Tv enthusiast. Incurable bacon fan. Alcohol expert.",
+    "goals": "Look better",
+    "workouts": []
+  },
+  {
+    "name": "George Smith",
+    "email": "george.smith@example.com",
+    "password": "chocolate123",
+    "bio": "Explorer. Pop culture expert. Twitter junkie. Alcohol advocate.",
+    "goals": "Get stronger",
+    "workouts": []
+  },
+  {
+    "name": "Riley Flores",
+    "email": "riley.flores@example.com",
+    "password": "juice234",
+    "bio": "Wannabe internet specialist. Food trailblazer. Reader. Analyst.",
+    "goals": "Be healthier",
+    "workouts": []
+  },
+  {
+    "name": "Melissa Wong",
+    "email": "melissa.wong@example.com",
+    "password": "cheese456",
+    "bio": "Professional thinker. Unapologetic tv junkie. Social media maven. Entrepreneur.",
+    "goals": "Look better",
+    "workouts": []
+  },
+  {
+    "name": "Trevor Hernandez",
+    "email": "trevor.hernandez@example.com",
+    "password": "bread789",
+    "bio": "Certified coffee ninja. Thinker. Zombie buff. Twitter fanatic.",
+    "goals": "Get stronger",
+    "workouts": []
+  }
+]

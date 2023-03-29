@@ -1,0 +1,52 @@
+[  
+  {    
+    "name": "Push",    
+    "userId": "<insert ObjectId of user document here>",    
+    "exercises": []
+  },
+  {
+    "name": "Pull",
+    "userId": "<insert ObjectId of user document here>",
+    "exercises": []
+  },
+  {
+    "name": "Legs",
+    "userId": "<insert ObjectId of user document here>",
+    "exercises": []
+  },
+  {
+    "name": "Upper Body",
+    "userId": "<insert ObjectId of user document here>",
+    "exercises": []
+  },
+  {
+    "name": "Lower Body",
+    "userId": "<insert ObjectId of user document here>",
+    "exercises": []
+  },
+  {
+    "name": "Core & Cardio",
+    "userId": "<insert ObjectId of user document here>",
+    "exercises": []
+  },
+  {
+    "name": "Chest and Back",
+    "userId": "<insert ObjectId of user document here>",
+    "exercises": []
+  },
+  {
+    "name": "Shoulders and Arms",
+    "userId": "<insert ObjectId of user document here>",
+    "exercises": []
+  },
+  {
+    "name": "Leg Day A",
+    "userId": "<insert ObjectId of user document here>",
+    "exercises": []
+  },
+  {
+    "name": "Leg Day B",
+    "userId": "<insert ObjectId of user document here>",
+    "exercises": []
+  }
+]

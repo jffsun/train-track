@@ -1,28 +1,25 @@
-require('dotenv').config(); // specify path to your .env file
-
-console.log(process.env.ATLAS_URI);
+// access .env 
+require('dotenv').config();
 
 const { MongoClient } = require("mongodb");
 
-const Db = process.env.ATLAS_URI;
-const client = new MongoClient(Db, {
+const uri = process.env.MONGO_URI;
+
+const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
-var _db;
+let db;
 
-module.exports = {
-  connectToServer: function (callback) {
-    client.connect(function (err, db) {
-      if (db) {
-        _db = db.db("train-trackDB");
-        console.log("Successfully connected to MongoDB.");
-      }
-      return callback(err);
-    });
-  },
-  getDb: function () {
-    return _db;
-  },
-};
+async function connectToServer() {
+  try {
+    await client.connect();
+    console.log("Connected to MongoDB");
+    db = client.db("train-track");
+  } catch (error) {
+    console.log("Error connecting to MongoDB", error);
+  }
+}
+
+module.exports = connectToServer;

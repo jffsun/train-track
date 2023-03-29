@@ -1,64 +1,38 @@
-// import express server package
 const express = require('express');
-
-// graphql is a query language, explicitly outlining the input and output of a query, allowing for one api endpoint to handle multiple mutations and queries
-// apollo server is an implementation of graphql. allows us to describe the types of data our api can handle + the available queries and mutations
-const {ApolloServer} = require('apollo-server-express');
-
+const { ApolloServer } = require('apollo-server-express');
+const connectToServer = require('./db/conn');
 const {typeDefs, resolvers} = require('./schemas');
-
-// import path node.js package providing a way to work with file and directory paths
+const app = express();
 const path = require('path');
-
-// allows cross origin resource sharing
 const cors = require("cors");
 
-// get driver connection
-const db = require("./db/conn");
+// Connect to MongoDB and start the server
+const startServer = async() => {
+  app.use(cors())
 
-// initialize express app
-const app = express();
+  const server = new ApolloServer({ typeDefs, resolvers });
 
-// import and configure dotenv package
-require('dotenv').config();
+  await server.start();
 
-console.log(process.env.ATLAS_URI);
+  // Apply the Apollo middleware to the Express app
+  server.applyMiddleware({ app });
 
-// allow for app to interact with apis hosted on different domains
-app.use(cors());
+  // if in production environment, serve static files in ../client/build
+  if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '../client/build')));
+  }
 
-// recognizes request objects as a json object
-app.use(express.json());
-
-// Apollo Server API receives query/mutation, your resolvers fetch the data and return the results to the client in the format specified
-// typeDefs define the structure of the data that clients can query from your API
-// resolvers are responsible for fetching and transforming that data from the underlying data sources that were requested by the client
-const server = new ApolloServer({typeDefs, resolvers })
-
-// if in production environment, serve static files in ../client/build
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/build')));
-}
-
-// at root route, send initial index.html to client and javascript code will render the rest
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+  // at root route, send initial index.html to client and javascript code will render the rest
+  app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
   });
 
-// define the port
-const port = process.env.PORT || 3001;
-  
-// start the server
-const startApolloServer = async(typeDefs, resolvers) => {
-  await server.start();
-  server.applyMiddleware({app});
+  connectToServer();
 
-  db.once('open', () => {
-      app.listen(port, () => {
-        console.log(`API server running on port ${port}!`);
-        console.log(`Use GraphQL at http://localhost:${port}${server.graphqlPath}`);
-      })
-  })
-}
+  // Start the server
+  app.listen({ port: process.env.PORT || 3001 }, () => {
+    console.log(`Server ready at http://localhost:${process.env.PORT || 3001}${server.graphqlPath}`);
+  });
+};
 
-startApolloServer(typeDefs, resolvers);
+ startServer();
