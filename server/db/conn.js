@@ -1,25 +1,9 @@
-// access .env 
-require('dotenv').config();
+const mongoose = require('mongoose');
 
-const { MongoClient } = require("mongodb");
+// connect to database with mongoose
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/train-track', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
 
-const uri = process.env.MONGO_URI;
-
-const client = new MongoClient(uri, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-
-let db;
-
-async function connectToServer() {
-  try {
-    await client.connect();
-    console.log("Connected to MongoDB");
-    db = client.db("train-track");
-  } catch (error) {
-    console.log("Error connecting to MongoDB", error);
-  }
-}
-
-module.exports = connectToServer;
+module.exports = mongoose.connection;
