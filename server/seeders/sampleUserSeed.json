@@ -1,0 +1,16 @@
+[
+  {
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "password": "password123",
+  "bio": "I'm a fitness enthusiast and love to stay active!",
+  "goals": "I hope to be stronger and healthier"
+  },
+  {
+    "name": "Jane Doe",
+    "email": "janedoe@example.com",
+    "password": "password456",
+    "bio": "I'm also a fitness enthusiast and love to stay active!",
+    "goals": "I hope to be stronger and healthier too"
+  }  
+]

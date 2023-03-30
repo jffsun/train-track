@@ -34,7 +34,7 @@ const userSchema = new Schema({
   toJSON: {
     getters: true,
   },
-  id: false,
+  id: true,
 });
 
 // set up pre-save middleware to create password
