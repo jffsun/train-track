@@ -15,12 +15,12 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
 }
 
-// at root route, send initial index.html to client and javascript code will render rest
+// at root route, send initial index.html to client and javascript will render rest
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
-// Connect to MongoDB and start the server
+// connect to MongoDB and start the server
 const startApolloServer = async() => {
 
   await server.start();
