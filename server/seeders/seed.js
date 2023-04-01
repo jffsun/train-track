@@ -1,19 +1,22 @@
 const db = require('../db/conn');
 const { User } = require('../models');
+const { Workout } = require('../models');
+
 const userSeeds = require('./sampleUserSeed.json')
+const workoutSeeds = require('./sampleWorkoutSeed.json')
 // const { User, Workout, Exercise, Set } = require('../models');
 
 db.once('open', async () => {
   try {
 
     // delete existing data 
-    await User.deleteMany({});
-    // await Workout.deleteMany({});
+    // await User.deleteMany({});
+    await Workout.deleteMany({});
     // await Exercise.deleteMany({});
     // await Set.deleteMany({});
 
-    await User.insertMany(userSeeds);
-
+    // await User.insertMany(userSeeds);
+    await Workout.insertMany(workoutSeeds);
   } catch (err) {
     console.error(err);
 
