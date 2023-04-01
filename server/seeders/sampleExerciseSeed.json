@@ -1,0 +1,38 @@
+[  
+  {
+    "workoutId": "642786ed2b07e6d6cd325056",    
+    "name": "Bench Press"  
+  },  
+  {
+    "workoutId": "642786ed2b07e6d6cd325056",    
+    "name": "Lateral Raise"  
+  },  
+  {
+    "workoutId": "642786ed2b07e6d6cd325056",    
+    "name": "Tricep Extension"  
+  },  
+  {    
+    "workoutId": "642786ed2b07e6d6cd325057",    
+    "name": "Pull-Ups"
+  },  
+  {    
+    "workoutId": "642786ed2b07e6d6cd325057",    
+    "name": "Bent Over Rows"
+  }, 
+  {    
+    "workoutId": "642786ed2b07e6d6cd325057",    
+    "name": "Hammer Curls"
+  }, 
+  {
+    "workoutId": "642786ed2b07e6d6cd325058",    
+    "name": "Squats"
+  },
+  {
+    "workoutId": "642786ed2b07e6d6cd325058",    
+    "name": "Calf Raises"
+  },
+  {
+    "workoutId": "642786ed2b07e6d6cd325058",    
+    "name": "Lunges"
+  }
+]

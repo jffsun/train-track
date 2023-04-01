@@ -1,0 +1,212 @@
+[  
+  {
+    "exerciseId": "64278a864a52af85b9676b4f",    
+    "weight": 135,
+    "reps": 10,
+    "personal_record": false,
+    "date": "2022-03-01T08:00:00Z"  
+  },  
+  {
+    "exerciseId": "64278a864a52af85b9676b4f",    
+    "weight": 145,
+    "reps": 8,
+    "personal_record": false,
+    "date": "2022-03-08T08:00:00Z"
+  },  
+  {
+    "exerciseId": "64278a864a52af85b9676b4f",    
+    "weight": 155,
+    "reps": 6,
+    "personal_record": true,
+    "date": "2022-03-15T08:00:00Z"
+  },  
+  {
+    "exerciseId": "64278a864a52af85b9676b50",    
+    "weight": 20,
+    "reps": 20,
+    "personal_record": true,
+    "date": "2022-03-02T08:00:00Z"
+  },  
+  {
+    "exerciseId": "64278a864a52af85b9676b50",    
+    "weight": 20,
+    "reps": 15,
+    "personal_record": false,
+    "date": "2022-03-09T08:00:00Z" 
+  },  
+  {
+    "exerciseId": "64278a864a52af85b9676b50",    
+    "weight": 20,
+    "reps": 12,
+    "personal_record": false,
+    "date": "2022-03-09T08:00:00Z"  
+  }, 
+  {
+    "exerciseId": "64278a864a52af85b9676b51",    
+    "weight": 50,
+    "reps": 12,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T10:00:00.000Z" 
+  },  
+  {
+    "exerciseId": "64278a864a52af85b9676b51",    
+    "weight": 55,
+    "reps": 10,
+    "time": null,
+    "personal_record": true,
+    "date": "2023-03-27T10:15:00.000Z"
+  },  
+  {
+    "exerciseId": "64278a864a52af85b9676b51",    
+    "weight": 60,
+    "reps": 8,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T10:30:00.000Z"
+  },  
+  {    
+    "exerciseId": "64278a864a52af85b9676b52",    
+    "weight": null,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T11:00:00.000Z"
+  },  
+  {    
+    "exerciseId": "64278a864a52af85b9676b52",    
+    "weight": null,
+    "reps": 6,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T11:30:00.000Z"
+  },  
+  {    
+    "exerciseId": "64278a864a52af85b9676b52",    
+    "weight": null,
+    "reps": 4,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T11:45:00.000Z"
+  },  
+  {    
+    "exerciseId": "64278a864a52af85b9676b53",    
+    "weight": 135,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-27T10:00:00Z"
+  }, 
+  {    
+    "exerciseId": "64278a864a52af85b9676b53",    
+    "weight": 155,
+    "reps": 8,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-27T11:00:00Z"
+  }, 
+  {    
+    "exerciseId": "64278a864a52af85b9676b53",    
+    "weight": 175,
+    "reps": 6,
+    "time": null,
+    "personal_record": true,
+    "date": "2022-03-27T12:00:00Z"
+  }, 
+  {    
+    "exerciseId": "64278a864a52af85b9676b54",    
+    "weight": 30,
+    "reps": 12,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-27T14:00:00Z"
+  }, 
+  {    
+    "exerciseId": "64278a864a52af85b9676b54",    
+    "weight": 35,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-03-27T15:00:00Z"
+  }, 
+  {    
+    "exerciseId": "64278a864a52af85b9676b54",    
+    "weight": 40,
+    "reps": 8,
+    "time": null,
+    "personal_record": true,
+    "date": "2022-03-27T16:00:00Z"
+  }, 
+  {
+    "exerciseId": "64278a864a52af85b9676b55",    
+    "weight": 135,
+    "reps": 8,
+    "time": null,
+    "personal_record": true,
+    "date": "2022-01-02T10:00:00.000Z"
+  },
+  {
+    "exerciseId": "64278a864a52af85b9676b55",    
+    "weight": 155,
+    "reps": 6,
+    "time": null,
+    "personal_record": false,
+    "date": "2022-01-09T10:00:00.000Z"
+  },
+  {
+    "exerciseId": "64278a864a52af85b9676b55",    
+    "weight": 185,
+    "reps": 3,
+    "time": null,
+    "personal_record": true,
+    "date": "2022-01-23T10:00:00.000Z"
+  },
+  {
+    "exerciseId": "64278a864a52af85b9676b56",    
+    "weight": 100,
+    "reps": 12,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-27T09:00:00.000Z"
+  },
+  {
+    "exerciseId": "64278a864a52af85b9676b56",    
+    "weight": 120,
+    "reps": 10,
+    "time": null,
+    "personal_record": true,
+    "date": "2023-03-26T09:00:00.000Z"
+  },
+  {
+    "exerciseId": "64278a864a52af85b9676b56",    
+    "weight": 80,
+    "reps": 15,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-25T09:00:00.000Z"
+  },
+  {
+    "exerciseId": "64278a864a52af85b9676b57",    
+    "weight": 50,
+    "reps": 10,
+    "time": null,
+    "personal_record": false,
+    "date": "2023-03-20T10:00:00.000Z"
+  },
+  {
+    "exerciseId": "64278a864a52af85b9676b57",    
+    "weight": 50,
+    "reps": 10,
+    "time": null,
+    "personal_record": true,
+    "date": "2023-03-22T10:00:00.000Z"
+  },
+  {
+    "exerciseId": "64278a864a52af85b9676b57",    
+    "weight": 55,
+    "reps": 8,
+    "time": null,
+    "personal_record": true,
+    "date": "2023-03-24T10:00:00.000Z"
+  }
+]
