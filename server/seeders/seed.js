@@ -1,37 +1,27 @@
-const mongoose = require('mongoose');
-const connectToServer = require('../db/conn');
+const db = require('../db/conn');
 const { User } = require('../models');
+const userSeeds = require('./sampleUserSeed.json')
 // const { User, Workout, Exercise, Set } = require('../models');
 
-const users = require ('./sampleUserSeed.json')
-// const workouts = require ('./workoutSeeds.json')
-// const exercises = require ('./exerciseSeeds.json')
-// const sets = require ('./setSeeds.json')
+db.once('open', async () => {
+  try {
 
-async function seedDatabase() {
-  // Connect to the database
-  await connectToServer();
+    // delete existing data 
+    await User.deleteMany({});
+    // await Workout.deleteMany({});
+    // await Exercise.deleteMany({});
+    // await Set.deleteMany({});
 
-  User.insertMany(users)
-  .then((result) => {
-    console.log(`Inserted ${result.length} users`);
-  })
-  .catch((error) => {
-    console.error(`Error inserting users: ${error}`);
-  });
+    await User.insertMany(userSeeds);
 
-  // Insert the test data into the database
-  // await Promise.all([
-  //   User.insertMany(users),
-  //   // Workout.insertMany(workouts),
-  //   // Exercise.insertMany(exercises),
-  //   // Set.insertMany(sets),
-  // ]);
+  } catch (err) {
+    console.error(err);
 
-  console.log('Database seeded successfully');
+    // if error, indicates unsuccessful termination of process 
+    process.exit(1);
+  }
+  console.log('Data successfully deleted and seeded!');
 
-  // // Disconnect from the database
-  await mongoose.disconnect();
-}
-
-seedDatabase().catch(console.error);
+  // successful termination of process
+  process.exit(0);
+});
