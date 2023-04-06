@@ -125,10 +125,12 @@ const typeDefs = gql`
   type Set {
     id: ID!
     exerciseId: ID!
+    warm_up: Boolean
     weight: Float
     reps: Int
     time: Int
     personal_record: Boolean
+    notes: String
     date: Date!
   }  
 
