@@ -13,7 +13,7 @@ db.once('open', async () => {
     // await User.deleteMany({});
     // await Workout.deleteMany({});
     // await Exercise.deleteMany({});
-    // await Set.deleteMany({});
+    await Set.deleteMany({});
 
     // await User.insertMany(userSeeds);
     // await Workout.insertMany(workoutSeeds);
@@ -30,7 +30,7 @@ db.once('open', async () => {
     // if error, indicates unsuccessful termination of process 
     process.exit(1);
   }
-  console.log('Data successfully deleted and seeded!');
+  console.log('Data successfully seeded!');
 
   // successful termination of process
   process.exit(0);

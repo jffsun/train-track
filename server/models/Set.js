@@ -6,6 +6,9 @@ const setSchema = new Schema ({
     ref: 'Exercise',
     required: true
   },
+  warm_up: {
+    type: Boolean,
+  },
   weight: {
     type: Number
   },
@@ -16,7 +19,10 @@ const setSchema = new Schema ({
     type: Number
   },
   personal_record: {
-    type: Boolean,
+    type: Boolean
+  },
+  notes: {
+    type: String
   },
   date: {
     type: Date, 
