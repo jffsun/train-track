@@ -80,7 +80,7 @@ const resolvers = {
     }
     },
     // destructures user id and input values for easy access
-    updateUser: async (_, { id, input }) => {
+    updateUser: async (_, { input }) => {
       try {
         // returns the updated user back to client 
         const updatedUser = await User.findByIdAndUpdate(id, input, { new: true });
@@ -121,22 +121,29 @@ const resolvers = {
         throw new Error("Error creating workout.");
       }
     },
-    updateWorkout: async (_, { id, input }) => {
+    updateWorkout: async (_, { input }) => {
+      const { id } = input; // extract the id from the input object
+      if (!id) {
+        throw new Error("Workout ID is required.");
+      }
       try {
-        const updatedWorkout = Workout.findByIdAndUpdate(id, input, { new: true });
+        const updatedWorkout = await Workout.findByIdAndUpdate(id, input, { new: true });
         if (!updatedWorkout) {
           throw new Error(`Workout with ID: ${id} not found.`);
         }
+        // explicitly restate updated workout's id in case lost in update process
+        updatedWorkout.id = id;
         return updatedWorkout; 
       }
       catch(error) {
         console.error(error);
         throw new Error("Error updating workout.");
       }
-    },
-    deleteWorkout: async (_, { id }) => {
+    },    
+    deleteWorkout: async (_, { id } ) => {
+      console.log(id);
       try {
-        deletedWorkout = Workout.findByIdAndDelete(id);
+        deletedWorkout = await Workout.findByIdAndDelete(id);
         if (!deletedWorkout) {
           throw new Error(`Workout with ID: ${id} not found.`);
         }
@@ -160,7 +167,7 @@ const resolvers = {
         throw new Error("Error creating exercise.");
       }
     },
-    updateExercise: async (_, { id, input }) => {
+    updateExercise: async (_, { input }) => {
       try {
         const updatedExercise = Exercise.findByIdAndUpdate(id, input, { new: true });
         if (!updatedExercise) {
@@ -199,7 +206,7 @@ const resolvers = {
         throw new Error("Error creating set.");
       }
     },
-    updateSet: async (_, { id, input }) => {
+    updateSet: async (_, { input }) => {
       try {
         const updatedSet = Set.findByIdAndUpdate(id, input, { new: true });
         if (!updatedSet) {
