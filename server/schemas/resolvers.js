@@ -39,7 +39,10 @@ const resolvers = {
         if (!exercises) {
           throw new Error(`Exercises under Workout ID: ${workoutId} cannot be found.`);
         }
-        return exercises;
+        // map through returned exercises
+        return exercises.map(exercise => ({ ...exercise.toObject(), // convert document to js object copying exercise properties to new array
+          id: exercise._id // id property of exercise obj in new array set to _id of mongoose document
+        }));
       } catch(error) {
         console.error(error);
         throw new Error("Error finding exercises.");
