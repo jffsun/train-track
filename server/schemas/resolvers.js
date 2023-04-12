@@ -80,7 +80,11 @@ const resolvers = {
     }
     },
     // destructures user id and input values for easy access
-    updateUser: async (_, { input }) => {
+    updateUser: async (_, { input }) => { // TO DO: logic to decrypt hashed password, update, rehash
+      const { id } = input; // extract the id from the input object
+      if (!id) {
+        throw new Error("User ID is required.");
+      }
       try {
         // returns the updated user back to client 
         const updatedUser = await User.findByIdAndUpdate(id, input, { new: true });
@@ -94,7 +98,7 @@ const resolvers = {
         throw new Error("Error updating user.");
       }
     },
-    // destructure id from user input object to use in function
+    // destructure id from input object access in function
     deleteUser: async (_, { id }) => {
       try {
         const deletedUser = await User.findByIdAndDelete(id);
@@ -141,7 +145,6 @@ const resolvers = {
       }
     },    
     deleteWorkout: async (_, { id } ) => {
-      console.log(id);
       try {
         deletedWorkout = await Workout.findByIdAndDelete(id);
         if (!deletedWorkout) {
