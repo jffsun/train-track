@@ -3,7 +3,12 @@ const bcrypt = require('bcrypt');
 const Workout = require('./Workout');
 
 const userSchema = new Schema({
-  name: {
+  firstName: {
+    type: String,
+    required: true,
+    trim: true
+  },
+  lastName: {
     type: String,
     required: true,
     trim: true
@@ -29,13 +34,23 @@ const userSchema = new Schema({
     required: true,
   },
   workouts: [Workout.schema],
-},
-{
-  toJSON: {
-    getters: true,
-  },
-  id: true,
 });
+
+// fullName virtual property that is not stored in db 
+userSchema.virtual('fullName').get(function(){
+  return `${firstName} ${lastName}`;
+})
+
+// toJSON options whenever a document is serialized in JSON format
+userSchema.set('toJSON', {
+  getters: true, // allow getters which retrieve firstName and lastName
+  virtuals: true, // allow virtual properties like 'fullName'
+  transform: function (doc, ret) { // customizes JSON output that's returned to the client
+    delete ret._id;
+    delete ret.__v;
+    ret.id = doc._id; // default mongoose _id to id
+  }
+})
 
 // set up pre-save middleware to create password
 userSchema.pre('save', async function(next) {
@@ -43,7 +58,6 @@ userSchema.pre('save', async function(next) {
     const saltRounds = 10;
     this.password = await bcrypt.hash(this.password, saltRounds);
   }
-
   next();
 });
 
