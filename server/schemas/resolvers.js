@@ -121,9 +121,9 @@ const resolvers = {
       try {
         const newWorkout = new Workout(input);
         await newWorkout.save();
-        // prevent loss of newWorkout object's id during mutation process
+        // code to return workout's ID since _id field isn't returned by default in graphql mutation response
         return { ...newWorkout.toJSON(), // copy all other fields other than ID to newWorkout obj
-          id: newWorkout._id.toString() // convert id to a string for the new id field in newWorkout obj
+          id: newWorkout._id.toString() // new id converts _id to string to be returned
         };
       }
       catch(error) {
