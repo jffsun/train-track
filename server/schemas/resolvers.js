@@ -74,6 +74,7 @@ const resolvers = {
     try {
       // create newUser object
       const newUser = new User(input);
+      console.log(newUser);
       await newUser.save();
       return newUser;
     }
@@ -101,7 +102,6 @@ const resolvers = {
         throw new Error("Error updating user.");
       }
     },
-    // destructure id from input object access in function
     deleteUser: async (_, { id }) => {
       try {
         const deletedUser = await User.findByIdAndDelete(id);
@@ -116,12 +116,15 @@ const resolvers = {
       }
     }
   },
-  WorkoutMutations: {
+  WorkoutMutations: { 
     createWorkout: async (_, { input }) => {
       try {
         const newWorkout = new Workout(input);
         await newWorkout.save();
-        return newWorkout;
+        // prevent loss of newWorkout object's id during mutation process
+        return { ...newWorkout.toJSON(), // copy all other fields other than ID to newWorkout obj
+          id: newWorkout._id.toString() // convert id to a string for the new id field in newWorkout obj
+        };
       }
       catch(error) {
         console.error(error);
@@ -138,7 +141,7 @@ const resolvers = {
         if (!updatedWorkout) {
           throw new Error(`Workout with ID: ${id} not found.`);
         }
-        // explicitly restate updated workout's id in case lost in update process
+        // restate updated workout's id to not lose id in update process
         updatedWorkout.id = id;
         return updatedWorkout; 
       }
@@ -174,11 +177,16 @@ const resolvers = {
       }
     },
     updateExercise: async (_, { input }) => {
+      const { id } = input;
+      if (!id) {
+        throw new Error("Exercise ID is required.");
+      }
       try {
         const updatedExercise = Exercise.findByIdAndUpdate(id, input, { new: true });
         if (!updatedExercise) {
           throw new Error(`Exercise with ID: ${id} not found.`);
         }
+        updatedExercise.id = id;
         return updatedExercise;
       }
       catch(error) {
