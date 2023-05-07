@@ -1,16 +1,16 @@
 [
   {
-  "name": "John Doe",
-  "email": "johndoe@example.com",
-  "password": "password123",
-  "bio": "I'm a fitness enthusiast and love to stay active!",
-  "goals": "I hope to be stronger and healthier"
+    "firstName": "Bob",
+    "lastName": "Smith",
+    "password": "password123",
+    "bio": "I'm a runner and cyclist, and I'm always looking for new challenges!",
+    "goals": "My goal is to run a marathon and complete a century ride on my bike."
   },
   {
-    "name": "Jane Doe",
-    "email": "janedoe@example.com",
+    "name": "Sarah Lee",
+    "email": "sarahlee@example.com",
     "password": "password456",
-    "bio": "I'm also a fitness enthusiast and love to stay active!",
-    "goals": "I hope to be stronger and healthier too"
+    "bio": "I'm a yoga teacher and enjoy helping others find their inner peace.",
+    "goals": "My goal is to become more flexible and master some advanced yoga poses."
   }  
 ]
