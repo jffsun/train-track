@@ -42,7 +42,8 @@ const typeDefs = gql`
   }
 
   input CreateUserInput {
-    name: String!
+    firstName: String!
+    lastName: String!
     email: String!
     password: String!
     bio: String!
@@ -51,7 +52,8 @@ const typeDefs = gql`
 
   input UpdateUserInput {
     id: ID!
-    name: String
+    firstName: String
+    lastName: String
     email: String
     password: String
     bio: String
@@ -100,12 +102,14 @@ const typeDefs = gql`
 
   type User {
     id: ID!
-    name: String!
+    firstName: String!
+    lastName: String!
     email: String!
     password: String!
     bio: String!
     goals: String!
     workouts: [Workout]
+    fullName: String!
   }
 
   type Workout {
